@@ -1,0 +1,17 @@
+Dec 2009
+1) updated index.html - changed the format
+2) introduced pastimes
+
+11Jan2010
+1) guestbook 
+	1) reload images and style.css and index.html
+	2) updated index.html
+
+2) Simplyfood
+	1) images/sweets/2010_PatiSheptaPita.JPG
+	2) images/sweets/2010_PatiSheptaPita.gif
+	3) sweets_photos.html
+
+Oct2015
+1) homepage - removed the redundant orkut badge code
+2) cleaned the pastimes page of engineering related pictures.Just retained programming

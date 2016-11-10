@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>My Baking Creations - 2008-09</title>
+    <meta content="Evrsoft First Page" name="GENERATOR" />
+    <link media="all" href="style.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="highslide.css" />
+	<script type="text/javascript" src="highslide-full.js"></script>
+	<script type="text/javascript">
+	//<![CDATA[
+	hs.graphicsDir = 'images/highslide/';
+	hs.transitions = ['expand', 'crossfade'];
+	hs.restoreCursor = null;
+	hs.lang.restoreTitle = 'Click for next image';
+
+	// Add the slideshow providing the controlbar and the thumbstrip
+	hs.addSlideshow({
+		//slideshowGroup: 'group1',
+		interval: 5000,
+		repeat: true,
+		useControls: true,
+		overlayOptions: {
+			position: 'bottom right',
+			offsetY: 50
+		},
+		thumbstrip: {
+			position: 'above',
+			mode: 'horizontal',
+			relativeTo: 'expander'
+		}
+	});
+
+	// Options for the in-page items
+	var inPageOptions = {
+		//slideshowGroup: 'group1',
+		outlineType: null,
+		allowSizeReduction: false,
+		wrapperClassName: 'in-page controls-in-heading',
+		useBox: true,
+		width: 600,
+		height: 300,
+		targetX: 'gallery-area 10px',
+		targetY: 'gallery-area',
+		captionEval: 'this.thumb.alt',
+		numberPosition: 'caption'
+	}
+
+	// Open the first thumb on page load
+	hs.addEventListener(window, 'load', function() {
+		document.getElementById('thumb1').onclick();
+	});
+
+	// Cancel the default action for image click and do next instead
+	hs.Expander.prototype.onImageClick = function() {
+		if (/in-page/.test(this.wrapper.className)) return hs.next();
+	}
+
+	// Under no circumstances should the static popup be closed
+	hs.Expander.prototype.onBeforeClose = function() {
+		if (/in-page/.test(this.wrapper.className)) return false;
+	}
+	// ... nor dragged
+	hs.Expander.prototype.onDrag = function() {
+		if (/in-page/.test(this.wrapper.className)) return false;
+	}
+
+	// Keep the position after window resize
+	hs.addEventListener(window, 'resize', function() {
+		var i, exp;
+		hs.getPageSize();
+
+		for (i = 0; i < hs.expanders.length; i++) {
+			exp = hs.expanders[i];
+			if (exp) {
+				var x = exp.x,
+					y = exp.y;
+
+				// get new thumb positions
+				exp.tpos = hs.getPosition(exp.el);
+				x.calcThumb();
+				y.calcThumb();
+
+				// calculate new popup position
+				x.pos = x.tpos - x.cb + x.tb;
+				x.scroll = hs.page.scrollLeft;
+				x.clientSize = hs.page.width;
+				y.pos = y.tpos - y.cb + y.tb;
+				y.scroll = hs.page.scrollTop;
+				y.clientSize = hs.page.height;
+				exp.justify(x, true);
+				exp.justify(y, true);
+
+				// set new left and top to wrapper and outline
+				exp.moveTo(x.pos, y.pos);
+			}
+		}
+	});
+	//]]>
+	</script>
+	<style type="text/css">
+		.highslide-image {
+			border: 1px solid black;
+		}
+		.highslide-controls {
+			width: 90px !important;
+		}
+		.highslide-controls .highslide-close {
+			display: none;
+		}
+		.highslide-controls .highslide-full-expand {
+			display: none;
+		}
+		.highslide-caption {
+			padding: .5em 0;
+		}
+	</style>
+</head>
+
+<body>
+  <h1>Welcome to Sreerekha's Home Page</h1>
+
+  <table style="WIDTH: 904px; HEIGHT: 475px">
+    <tbody>
+      <tr height="470">
+        <td width="200">
+          <div class="SideMenu" style="WIDTH: 193px; HEIGHT: 100%">
+            <div class="header" style="WIDTH: 185px; HEIGHT: 26px">
+              Menu
+            </div>
+            <div class="item"><a href="../index.html">Home</a></div>
+			<div class="item"><a href="bakery.html">Bakery</a></div>
+			<div class="item"><a href="snacks.html">Snacks</a></div>
+			<div class="item"><a href="sweets.html">Sweets</a></div>
+			<div class="item"><a href="../guestbook/index.html">Guest Book</a></div>
+          </div>
+        </td>
+
+        <td colspan="3">
+          <table >
+            <tbody>
+              <tr>
+                <td>
+                    <div class="Title">
+                      <font color="white">My Baking Creations - 2008-09</font>
+                    </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+<!-- ======================================================================== -->
+
+<script>
+// Options for the in-page items
+	var inPageOptions = {
+		//slideshowGroup: 'group1',
+		outlineType: null,
+		allowSizeReduction: false,
+		wrapperClassName: 'in-page controls-in-heading',
+		useBox: true,
+		width: 600,
+		height: 300,
+		targetX: 'gallery-area 10px',
+		targetY: 'gallery-area',
+		captionEval: 'this.thumb.alt',
+		numberPosition: 'caption'
+	}
+
+	// Open the first thumb on page load
+	hs.addEventListener(window, 'load', function() {
+		document.getElementById('thumb1').onclick();
+	});
+</script>
+<!-- The slideshow hidden container -->
+<div class="hidden-container">
+
+
+<a id="thumb1" class='highslide' href='images/bakery/2011_Walnut_Coffe_cake_1.JPG' onclick="return hs.expand(this, inPageOptions)">
+				<img src='images/bakery/thumbs/2011_Walnut_Coffe_cake_1.gif'
+				alt='<p> Walnut Coffee Cake - 15 Jun 2011 '/>
+	</a>
+	<a id="thumb1" class='highslide' href='images/bakery/2011_Walnut_Coffe_cake_2.JPG' onclick="return hs.expand(this, inPageOptions)">
+				<img src='images/bakery/thumbs/2011_Walnut_Coffe_cake_2.gif'
+				alt='<p>Walnut Coffee Cake - 15 Jun 2011 '/>
+	</a>
+	<a id="thumb1" class='highslide' href='images/bakery/2009_Dec_Cookies.JPG' onclick="return hs.expand(this, inPageOptions)">
+				<img src='images/bakery/thumbs/2009_Dec_Cookies.gif'
+				alt='<p>Choco nochip cookies '/>
+	</a>
+	<a id="thumb1" class='highslide' href='images/bakery/2009_Nov_PeanutButter_Cookies.JPG' onclick="return hs.expand(this, inPageOptions)">
+				<img src='images/bakery/thumbs/2009_Nov_PeanutButter_Cookies.gif'
+				alt='<p>Peanut butter cookies - Another of my lil boys favourite cookie ! Easy to make and good to eat ! you can find the recipe <a href="http://southernfood.about.com/od/pbcookies/r/30408b.htm">here</a>'/>
+	</a>
+	<a id="thumb1" class='highslide' href='images/bakery/2009_Jul_Chocolate_Pudding_1.JPG' onclick="return hs.expand(this, inPageOptions)">
+		<img src='images/bakery/thumbs/2009_Jul_Chocolate_Pudding_1.gif' alt='<p>Chocolate Pudding - One of my lil boys favourite . The recipe is
+		as follows :<br> INGRIDIENTS :<br> 2 beaten eggs<br>2 cups milk <br> 3 tsp cocoa powder<br>1/2 tsp vanilla essence<br> 4 tbsp powdered
+		sugar<br> METHOD :<br> Mix all the ingridients except the eggs and microwave at max power ( 900 W) for 6-7 mins<br>Now add the beaten eggs
+		and microwave at 60% power for 4 mins <br> Leave it to cool and refrigerate it <br> Garnish with cream and fruits as per your choice !<br>
+		Serve chilled !<br> Note:  You can also create this by steaming the mixture on a low flame for 10-12 mins after mixing all ingridients
+		properly ! in case you dont want to use microwave for it! . '/> </a>
+
+	<a id="thumb1" class='highslide' href='images/bakery/2009_Jul_Carrot_Apple_Healthy_cake.JPG' onclick="return hs.expand(this, inPageOptions)">
+			<img src='images/bakery/thumbs/2009_Jul_Carrot_Apple_Healthy_cake.gif' alt='<p>Carrot Apple Healthy cake - I really
+			like this cake because it is a healthy version of normal cakes which are heavy on the butter usage . I was actually
+			trying to make muffins for my son so that he can carry them to school or snack on them in the evenings with his glass
+			of milk.. but for some reason could not find a muffin mould in the locality .. after repeated attempts decided to make
+			it like a regular cake . I am yet to fine tune the baking time to make it more moist and soft !
+
+					The RECIPE is posted below for your perusal:<br> INGRIDIENTS :<br> 1 apple grated <br> 1cup carrot grated<br> 1
+					cup flour <br> 1/2 cup oatmeal flour <br> 1 tsp oil <br> 1/2 tsp vanilla essense <br> 1 beaten egg <br> 1/2 tsp
+					baking powder<br> 1/2 tsp baking soda<br> 1cup sugar <br>1 tsp cinnamon powder <br>
+
+					METHOD: <br> Mix all the ingridients together .<br>Grease the cake/muffin mould .<br>Fill to half and garnish
+	with fruits and nuts ( I used dates and raisins in my cake) and put the mould in a preheated oven to 180 degrees C for 20 mins !'/>
+	</a>
+	<a id="thumb1" class='highslide' href='images/bakery/2009_Jul_CAH_slice.JPG' onclick="return hs.expand(this, inPageOptions)">
+									<img src='images/bakery/thumbs/2009_Jul_CAH_slice.gif'
+									alt='<p>CAH cake Slice'/>
+	</a>
+
+	<a id="thumb1" class='highslide' href='images/bakery/2008_Nov_banana_bread.JPG' onclick="return hs.expand(this, inPageOptions)">
+			<img src='images/bakery/thumbs/2008_Nov_banana_bread.gif'
+			alt='<p> Banana Bread - I found this recipe on the <a href="http://www.joyofbaking.com/breakfast/BananaBread.html">internet </a> and except for the shape of the mould it did work to my best interest ! This was my first baking attempt in a looong long time now :) hence captured the memory !'/>
+	</a>
+
+	<a id="thumb1" class='highslide' href='images/bakery/2008_Nov_banana_bread_3.JPG' onclick="return hs.expand(this, inPageOptions)">
+			<img src='images/bakery/thumbs/2008_Nov_banana_bread_3.gif'
+			alt='<p>Banana Bread'/>
+	</a>
+
+</div>
+
+<div id="gallery-area" style="width: 450px; height: 550px; margin: 0 auto;"></div>
+
+
+<!-- ======================================================================== -->
+				</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div style="TEXT-ALIGN: center">
+                    <i><font color="#666666" size="2">Copyright &#169; 2009 <a href="../guestbook/index.html">Sreerekha</a> | All Rights Reserved</font></i>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
+
+

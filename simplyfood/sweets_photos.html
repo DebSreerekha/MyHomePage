@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>My Baking Creations - 2008-09</title>
+    <meta content="Evrsoft First Page" name="GENERATOR" />
+    <link media="all" href="style.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="highslide.css" />
+	<script type="text/javascript" src="highslide-full.js"></script>
+	<script type="text/javascript">
+	//<![CDATA[
+	hs.graphicsDir = 'images/highslide/';
+	hs.transitions = ['expand', 'crossfade'];
+	hs.restoreCursor = null;
+	hs.lang.restoreTitle = 'Click for next image';
+
+	// Add the slideshow providing the controlbar and the thumbstrip
+	hs.addSlideshow({
+		//slideshowGroup: 'group1',
+		interval: 5000,
+		repeat: true,
+		useControls: true,
+		overlayOptions: {
+			position: 'bottom right',
+			offsetY: 50
+		},
+		thumbstrip: {
+			position: 'above',
+			mode: 'horizontal',
+			relativeTo: 'expander'
+		}
+	});
+
+	// Options for the in-page items
+	var inPageOptions = {
+		//slideshowGroup: 'group1',
+		outlineType: null,
+		allowSizeReduction: false,
+		wrapperClassName: 'in-page controls-in-heading',
+		useBox: true,
+		width: 600,
+		height: 300,
+		targetX: 'gallery-area 10px',
+		targetY: 'gallery-area',
+		captionEval: 'this.thumb.alt',
+		numberPosition: 'caption'
+	}
+
+	// Open the first thumb on page load
+	hs.addEventListener(window, 'load', function() {
+		document.getElementById('thumb1').onclick();
+	});
+
+	// Cancel the default action for image click and do next instead
+	hs.Expander.prototype.onImageClick = function() {
+		if (/in-page/.test(this.wrapper.className)) return hs.next();
+	}
+
+	// Under no circumstances should the static popup be closed
+	hs.Expander.prototype.onBeforeClose = function() {
+		if (/in-page/.test(this.wrapper.className)) return false;
+	}
+	// ... nor dragged
+	hs.Expander.prototype.onDrag = function() {
+		if (/in-page/.test(this.wrapper.className)) return false;
+	}
+
+	// Keep the position after window resize
+	hs.addEventListener(window, 'resize', function() {
+		var i, exp;
+		hs.getPageSize();
+
+		for (i = 0; i < hs.expanders.length; i++) {
+			exp = hs.expanders[i];
+			if (exp) {
+				var x = exp.x,
+					y = exp.y;
+
+				// get new thumb positions
+				exp.tpos = hs.getPosition(exp.el);
+				x.calcThumb();
+				y.calcThumb();
+
+				// calculate new popup position
+				x.pos = x.tpos - x.cb + x.tb;
+				x.scroll = hs.page.scrollLeft;
+				x.clientSize = hs.page.width;
+				y.pos = y.tpos - y.cb + y.tb;
+				y.scroll = hs.page.scrollTop;
+				y.clientSize = hs.page.height;
+				exp.justify(x, true);
+				exp.justify(y, true);
+
+				// set new left and top to wrapper and outline
+				exp.moveTo(x.pos, y.pos);
+			}
+		}
+	});
+	//]]>
+	</script>
+	<style type="text/css">
+		.highslide-image {
+			border: 1px solid black;
+		}
+		.highslide-controls {
+			width: 90px !important;
+		}
+		.highslide-controls .highslide-close {
+			display: none;
+		}
+		.highslide-controls .highslide-full-expand {
+			display: none;
+		}
+		.highslide-caption {
+			padding: .5em 0;
+		}
+	</style>
+</head>
+
+<body>
+  <h1>Welcome to Sreerekha's Home Page</h1>
+
+  <table style="WIDTH: 904px; HEIGHT: 475px">
+    <tbody>
+      <tr height="470">
+        <td width="200">
+          <div class="SideMenu" style="WIDTH: 193px; HEIGHT: 100%">
+            <div class="header" style="WIDTH: 185px; HEIGHT: 26px">
+              Menu
+            </div>
+            <div class="item"><a href="../index.html">Home</a></div>
+			<div class="item"><a href="bakery.html">Bakery</a></div>
+			<div class="item"><a href="snacks.html">Snacks</a></div>
+			<div class="item"><a href="sweets.html">Sweets</a></div>
+			<div class="item"><a href="../guestbook/index.html">Guest Book</a></div>
+          </div>
+        </td>
+
+        <td colspan="3">
+          <table >
+            <tbody>
+              <tr>
+                <td>
+                    <div class="Title">
+                      <font color="white">Sweets - 2009</font>
+                    </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+<!-- ======================================================================== -->
+
+<script>
+// Options for the in-page items
+	var inPageOptions = {
+		//slideshowGroup: 'group1',
+		outlineType: null,
+		allowSizeReduction: false,
+		wrapperClassName: 'in-page controls-in-heading',
+		useBox: true,
+		width: 600,
+		height: 300,
+		targetX: 'gallery-area 10px',
+		targetY: 'gallery-area',
+		captionEval: 'this.thumb.alt',
+		numberPosition: 'caption'
+	}
+
+	// Open the first thumb on page load
+	hs.addEventListener(window, 'load', function() {
+		document.getElementById('thumb1').onclick();
+	});
+</script>
+
+<!-- The slideshow hidden container -->
+<div class="hidden-container">
+	<a id="thumb1" class='highslide' href='images/sweets/2010_Jan_PatiSheptaPita.JPG' onclick="return hs.expand(this, inPageOptions)">
+				<img src='images/sweets/thumbs/2010_Jan_PatiSheptaPita.gif'alt='<p>Jan 2010 _Pati Shepta Pita'/>
+	</a>
+
+	<a id="thumb1" class='highslide' href='images/sweets/2009_GulabJamun.JPG' onclick="return hs.expand(this, inPageOptions)">
+			<img src='images/sweets/thumbs/2009_GulabJamun.gif'alt='<p>Nov2009_Gulab Jamun'/>
+	</a>
+
+</div>
+
+<div id="gallery-area" style="width: 450px; height: 550px; margin: 0 auto;"></div>
+
+
+<!-- ======================================================================== -->
+				</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div style="TEXT-ALIGN: center">
+                    <i><font color="#666666" size="2">Copyright &#169; 2009 <a href="../guestbook/index.html">Sreerekha</a> | All Rights Reserved</font></i>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
+
+

@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <title>My Beading Creations</title>
+  <meta content="Evrsoft First Page" name="GENERATOR" />
+  <link media="all" href="style.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="highslide.css" />
+	<script type="text/javascript" src="highslide-full.js"></script>
+	<script type="text/javascript">
+	//<![CDATA[
+	hs.graphicsDir = 'images/highslide/';
+	hs.transitions = ['expand', 'crossfade'];
+	hs.restoreCursor = null;
+	hs.lang.restoreTitle = 'Click for next image';
+
+	// Add the slideshow providing the controlbar and the thumbstrip
+	hs.addSlideshow({
+		//slideshowGroup: 'group1',
+		interval: 5000,
+		repeat: true,
+		useControls: true,
+		overlayOptions: {
+			position: 'bottom right',
+			offsetY: 50
+		},
+		thumbstrip: {
+			position: 'above',
+			mode: 'horizontal',
+			relativeTo: 'expander'
+		}
+	});
+
+	// Options for the in-page items
+	var inPageOptions = {
+		//slideshowGroup: 'group1',
+		outlineType: null,
+		allowSizeReduction: false,
+		wrapperClassName: 'in-page controls-in-heading',
+		useBox: true,
+		width: 600,
+		height: 300,
+		targetX: 'gallery-area 10px',
+		targetY: 'gallery-area',
+		captionEval: 'this.thumb.alt',
+		numberPosition: 'caption'
+	}
+
+	// Open the first thumb on page load
+	hs.addEventListener(window, 'load', function() {
+		document.getElementById('thumb1').onclick();
+	});
+
+	// Cancel the default action for image click and do next instead
+	hs.Expander.prototype.onImageClick = function() {
+		if (/in-page/.test(this.wrapper.className)) return hs.next();
+	}
+
+	// Under no circumstances should the static popup be closed
+	hs.Expander.prototype.onBeforeClose = function() {
+		if (/in-page/.test(this.wrapper.className)) return false;
+	}
+	// ... nor dragged
+	hs.Expander.prototype.onDrag = function() {
+		if (/in-page/.test(this.wrapper.className)) return false;
+	}
+
+	// Keep the position after window resize
+	hs.addEventListener(window, 'resize', function() {
+		var i, exp;
+		hs.getPageSize();
+
+		for (i = 0; i < hs.expanders.length; i++) {
+			exp = hs.expanders[i];
+			if (exp) {
+				var x = exp.x,
+					y = exp.y;
+
+				// get new thumb positions
+				exp.tpos = hs.getPosition(exp.el);
+				x.calcThumb();
+				y.calcThumb();
+
+				// calculate new popup position
+				x.pos = x.tpos - x.cb + x.tb;
+				x.scroll = hs.page.scrollLeft;
+				x.clientSize = hs.page.width;
+				y.pos = y.tpos - y.cb + y.tb;
+				y.scroll = hs.page.scrollTop;
+				y.clientSize = hs.page.height;
+				exp.justify(x, true);
+				exp.justify(y, true);
+
+				// set new left and top to wrapper and outline
+				exp.moveTo(x.pos, y.pos);
+			}
+		}
+	});
+	//]]>
+	</script>
+	<style type="text/css">
+		.highslide-image {
+			border: 1px solid black;
+		}
+		.highslide-controls {
+			width: 90px !important;
+		}
+		.highslide-controls .highslide-close {
+			display: none;
+		}
+		.highslide-controls .highslide-full-expand {
+			display: none;
+		}
+		.highslide-caption {
+			padding: .5em 0;
+		}
+	</style>
+</head>
+<body>
+<h1>Welcome to Sreerekha's Home Page</h1>
+
+<table style="width: 904px; height: 475px;">
+
+  <tbody>
+    <tr height="470">
+      <td width="200">
+      <div class="SideMenu" style="width: 193px; height: 100%;">
+	      <div class="header" style="width: 185px; height: 26px;"> Menu </div>
+	      <div class="item"><a href="../index.html">Home</a></div>
+	      <div class="item"><a href="beadwork.html">Beadwork</a></div>
+	      <div class="item"><a href="beadwork_photos_2010.html">Beading Creations -2010</a></div>
+	      <div class="item"><a href="beadwork_photos_2009.html">Beading Creations -2009</a></div>
+	      <div class="item"><a href="beadwork_photos_2008.html">Beading Creations -2008</a></div>
+	      <div class="item"><a href="beadwork_photos_2007.html">Beading Creations -2007</a></div>
+	      <div class="item"><a href="beadwork_photos_2006.html">Beading Creations -2006</a></div>
+	      <div class="item"><a href="beadwork_photos_2005.html">Beading Creations -2005</a></div>
+	      <div class="item"><a href="crochet.html">Crochet</a></div>
+	      <div class="item"><a href="knitting.html">Knitting</a></div>
+	      <div class="item"><a href="sewing.html">Sewing</a></div>
+	      <div class="item"><a href="misc.html">Miscellaneous</a></div>
+	      <div class="item"><a href="../guestbook/index.html">Guest Book</a></div>
+      </div>
+      </td>
+      <td colspan="3">
+      <table>
+        <tbody>
+          <tr>
+            <td>
+            <div class="Title"> <font color="white">My Beading Creations - 2010</font> </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+<!-- ======================================================================== -->
+<script>
+// Options for the in-page items
+var inPageOptions = {
+	//slideshowGroup: 'group1',
+	outlineType: null,
+	allowSizeReduction: false,
+	wrapperClassName: 'in-page controls-in-heading',
+	useBox: true,
+	width: 600,
+	height: 600,
+	targetX: 'gallery-area 10px',
+	targetY: 'gallery-area',
+	captionEval: 'this.thumb.alt',
+	numberPosition: 'caption'
+}
+
+// Open the first thumb on page load
+hs.addEventListener(window, 'load', function() {
+	document.getElementById('thumb1').onclick();
+});
+</script>
+<!-- The slideshow hidden container -->
+<div class="hidden-container"> 
+	<a id="thumb1" class="highslide" href="images/beadwork/2010_Apr_GreyLeafs.JPG" onclick="return hs.expand(this, inPageOptions)"> 
+		<img src="images/beadwork/thumbs/2010_Apr_GreyLeafs.gif" alt="&lt;p&gt; GreyLeafs !" /> 
+	</a> 
+	<a id="thumb1" class="highslide" href="images/beadwork/2010_Apr_vampire_earrings.JPG" onclick="return hs.expand(this, inPageOptions)"> 
+		<img src="images/beadwork/thumbs/2010_Apr_vampire_earrings.gif" alt="&lt;p&gt; Vampire earrings " /> 
+	</a> 
+</div>
+<div id="gallery-area" style="margin: 0pt auto; width: 450px; height: 550px;"></div>
+</td>
+          </tr>
+          <tr>
+            <td>
+            <div style="text-align: center;"> 
+               <i><font color="#666666" size="2">Copyright &#169; 2009 <a href="../guestbook/index.html">Sreerekha</a> | All Rights Reserved</font></i> 
+            </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

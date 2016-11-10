@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <title>My Beading Creations</title>
+  <meta content="Evrsoft First Page" name="GENERATOR" />
+  <link media="all" href="style.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="highslide.css" />
+	<script type="text/javascript" src="highslide-full.js" ></script>
+	<script type="text/javascript">
+	//<![CDATA[
+	hs.graphicsDir = 'images/highslide/';
+	hs.transitions = ['expand', 'crossfade'];
+	hs.restoreCursor = null;
+	hs.lang.restoreTitle = 'Click for next image';
+
+	// Add the slideshow providing the controlbar and the thumbstrip
+	hs.addSlideshow({
+		//slideshowGroup: 'group1',
+		interval: 5000,
+		repeat: true,
+		useControls: true,
+		overlayOptions: {
+			position: 'bottom right',
+			offsetY: 50
+		},
+		thumbstrip: {
+			position: 'above',
+			mode: 'horizontal',
+			relativeTo: 'expander'
+		}
+	});
+
+	// Options for the in-page items
+	var inPageOptions = {
+		//slideshowGroup: 'group1',
+		outlineType: null,
+		allowSizeReduction: false,
+		wrapperClassName: 'in-page controls-in-heading',
+		useBox: true,
+		width: 300,
+		height: 300,
+		targetX: 'gallery-area 10px',
+		targetY: 'gallery-area',
+		captionEval: 'this.thumb.alt',
+		numberPosition: 'caption'
+	}
+
+	// Open the first thumb on page load
+	hs.addEventListener(window, 'load', function() {
+		document.getElementById('thumb1').onclick();
+	});
+
+	// Cancel the default action for image click and do next instead
+	hs.Expander.prototype.onImageClick = function() {
+		if (/in-page/.test(this.wrapper.className)) return hs.next();
+	}
+
+	// Under no circumstances should the static popup be closed
+	hs.Expander.prototype.onBeforeClose = function() {
+		if (/in-page/.test(this.wrapper.className)) return false;
+	}
+	// ... nor dragged
+	hs.Expander.prototype.onDrag = function() {
+		if (/in-page/.test(this.wrapper.className)) return false;
+	}
+
+	// Keep the position after window resize
+	hs.addEventListener(window, 'resize', function() {
+		var i, exp;
+		hs.getPageSize();
+
+		for (i = 0; i < hs.expanders.length; i++) {
+			exp = hs.expanders[i];
+			if (exp) {
+				var x = exp.x,
+					y = exp.y;
+
+				// get new thumb positions
+				exp.tpos = hs.getPosition(exp.el);
+				x.calcThumb();
+				y.calcThumb();
+
+				// calculate new popup position
+				x.pos = x.tpos - x.cb + x.tb;
+				x.scroll = hs.page.scrollLeft;
+				x.clientSize = hs.page.width;
+				y.pos = y.tpos - y.cb + y.tb;
+				y.scroll = hs.page.scrollTop;
+				y.clientSize = hs.page.height;
+				exp.justify(x, true);
+				exp.justify(y, true);
+
+				// set new left and top to wrapper and outline
+				exp.moveTo(x.pos, y.pos);
+			}
+		}
+	});
+	//]]>
+	</script>
+  
+  <style type="text/css">
+		.highslide-image {
+			border: 1px solid black;
+		}
+		.highslide-controls {
+			width: 90px !important;
+		}
+		.highslide-controls .highslide-close {
+			display: none;
+		}
+		.highslide-controls .highslide-full-expand {
+			display: none;
+		}
+		.highslide-caption {
+			padding: .5em 0;
+		}
+	</style>
+</head><body>
+<h1>Welcome to Sreerekha's Home Page</h1>
+
+<table style="width: 904px; height: 475px;">
+
+  <tbody>
+    <tr height="470">
+      <td width="200">
+      <div class="SideMenu" style="width: 193px; height: 100%;">
+      <div class="header" style="width: 185px; height: 26px;"> Menu </div>
+      <div class="item"><a href="../index.html">Home</a></div>
+      <div class="item"><a href="beadwork.html">Beadwork</a></div>
+      <div class="item"><a href="beadwork_photos_2010.html">Beading Creations -2010</a></div>
+      <div class="item"><a href="beadwork_photos_2009.html">Beading Creations -2009</a></div>
+      <div class="item"><a href="beadwork_photos_2008.html">Beading Creations -2008</a></div>
+      <div class="item"><a href="beadwork_photos_2007.html">Beading Creations -2007</a></div>
+      <div class="item"><a href="beadwork_photos_2006.html">Beading Creations -2006</a></div>
+      <div class="item"><a href="beadwork_photos_2005.html">Beading Creations -2005</a></div>
+      <div class="item"><a href="crochet.html">Crochet</a></div>
+      <div class="item"><a href="knitting.html">Knitting</a></div>
+      <div class="item"><a href="sewing.html">Sewing</a></div>
+      <div class="item"><a href="misc.html">Miscellaneous</a></div>
+      <div class="item"><a href="../guestbook/index.html">Guest Book</a></div>
+      </div>
+      </td>
+      <td colspan="3">
+      <table>
+        <tbody>
+          <tr>
+            <td>
+            <div class="Title"> <font color="white">My Beading Creations - 2009</font> </div>
+            </td>
+          </tr>
+          <tr>
+            <td><!-- ======================================================================== -->
+<script>
+// Options for the in-page items
+var inPageOptions = {
+	//slideshowGroup: 'group1',
+	outlineType: null,
+	allowSizeReduction: false,
+	wrapperClassName: 'in-page controls-in-heading',
+	useBox: true,
+	width: 600,
+	height: 600,
+	targetX: 'gallery-area 10px',
+	targetY: 'gallery-area',
+	captionEval: 'this.thumb.alt',
+	numberPosition: 'caption'
+}
+
+// Open the first thumb on page load
+hs.addEventListener(window, 'load', function() {
+		document.getElementById('thumb1').onclick();
+});
+    </script>
+<!-- The slideshow hidden container -->
+<div class="hidden-container"> 
+	<a id="thumb1" class="highslide" href="images/beadwork/2009_Dec_Frock.JPG" onclick="return hs.expand(this, inPageOptions)"> 
+		<img src="images/beadwork/thumbs/2009_Dec_Frock.gif" 
+                     alt="&lt;p&gt; Frock - when my son saw this he said - Ma it looks like a frock ;-) . hence the name !" />
+        </a> 
+	<a id="thumb1" class="highslide" href="images/beadwork/2009_Nov_water.JPG" onclick="return hs.expand(this, inPageOptions)"> 
+		<img src="images/beadwork/thumbs/2009_Nov_water.gif" 
+		     alt="&lt;p&gt; Water - set in blue, black, transparent beads .. representative of water" />
+        </a> 
+        <a id="thumb1" class="highslide" href="images/beadwork/2009_Nov_Simple%20spheres.JPG" onclick="return hs.expand(this, inPageOptions)"> 
+                <img src="images/beadwork/thumbs/2009_Nov_Simple%20spheres.gif" 
+                     alt="&lt;p&gt; Simple Spheres - This is an attempt to develop a simple spherical surface ! need to do the pendant too !" />
+        </a> 
+        <a id="thumb1" class="highslide" href="images/beadwork/2009_Nov_1.JPG" onclick="return hs.expand(this, inPageOptions)"> 
+		<img src="images/beadwork/thumbs/2009_Nov_1.gif" 
+		     alt="&lt;p&gt; Completed Digital Flora - I call this projest digital flora as it is set in black and white, as in 0 and 1 bits in the digital age :-). Finally got around finishing this project ! " />
+        </a> 
+	<a id="thumb1" class="highslide" href="images/beadwork/2009_Aug_Des_5.JPG" onclick="return hs.expand(this, inPageOptions)"> 
+		<img src="images/beadwork/thumbs/2009_Aug_Des_5.gif" 
+		     alt="&lt;p&gt; Pendent design - 1  " /> 
+	</a> 
+	<a id="thumb1" class="highslide" href="images/beadwork/2009_Aug_Des_4.JPG" onclick="return hs.expand(this, inPageOptions)"> 
+		<img src="images/beadwork/thumbs/2009_Aug_Des_4.gif" 
+		     alt="&lt;p&gt; Pendent design - 2  " /> 
+	</a> 
+	<a id="thumb1" class="highslide" href="images/beadwork/2009_Aug_Des_3.JPG" onclick="return hs.expand(this, inPageOptions)"> 
+		<img src="images/beadwork/thumbs/2009_Aug_Des_3.gif" 
+		     alt="&lt;p&gt; Pendent design - 3 " /> 
+	</a> 
+	<a id="thumb1" class="highslide" href="images/beadwork/2009_Aug_Des_2.JPG" onclick="return hs.expand(this, inPageOptions)"> 
+		<img src="images/beadwork/thumbs/2009_Aug_Des_2.gif" alt="&lt;p&gt; Pendent design - 4" /> 
+	</a> 
+	<a id="thumb1" class="highslide" href="images/beadwork/2009_Aug_Des_1.JPG" onclick="return hs.expand(this, inPageOptions)"> 
+		<img src="images/beadwork/thumbs/2009_Aug_Des_1.gif" alt="&lt;p&gt; Pendent design - 5 " /> 
+	</a> 
+	<a id="thumb1" class="highslide" href="images/beadwork/2009_Aug_Bell.JPG" onclick="return hs.expand(this, inPageOptions)"> 
+		<img src="images/beadwork/thumbs/2009_Aug_Bell.gif" alt="&lt;p&gt;The Bell- close up . " /> 
+	</a> 
+	<a id="thumb1" class="highslide" href="images/beadwork/2009_Aug_Bells_2.JPG" onclick="return hs.expand(this, inPageOptions)"> 
+		<img src="images/beadwork/thumbs/2009_Aug_Bells_2.gif" alt="&lt;p&gt; The Bells" />
+        </a> 
+	<a id="thumb1" class="highslide" href="images/beadwork/2009_pentagons_1.JPG" onclick="return hs.expand(this, inPageOptions)"> 
+		<img src="images/beadwork/thumbs/2009_pentagons_1.gif" 
+		     alt="&lt;p&gt; The Pentagons - This ear ring involves two pentagons sharing a common border giving it a third dimension .Tried creating a pendant with a design of a hexagon surrounded by 6 pentagons ... did not work .. realised need to do it the other way round .. pentagon surrounded by hexagons .. will post it once done  " />
+        </a> 
+	<a id="thumb1" class="highslide" href="images/beadwork/2009_1_3_small_3D.JPG" onclick="return hs.expand(this, inPageOptions)"> 
+		<img src="images/beadwork/thumbs/2009_1_3_small_3D.gif" 
+	             alt="&lt;p&gt; The Bentley Continental T - This was created on request for my son . He actually wanted a car Rakhi .. I promised him a 2D one but he would not budge from his position that he needs this particular model complete in all aspects ... I could not fit the fog lamps though and bargained with him to do it in the next one ." />
+        </a> 
+        <a id="thumb1" class="highslide" href="images/beadwork/2009_1_2_small_3D.JPG" onclick="return hs.expand(this, inPageOptions)"> 
+        	<img src="images/beadwork/thumbs/2009_1_3_small_3D.gif" alt="&lt;p&gt; Bentley Continental T - Perspective" /> 
+	</a> 
+	<a id="thumb1" class="highslide" href="images/beadwork/2009_1_1_small_3D.JPG" onclick="return hs.expand(this, inPageOptions)"> 
+		<img src="images/beadwork/thumbs/2009_1_1_small_3D.gif" alt="&lt;p&gt; Bentley Continental T - Side view ;)  " /> 
+	</a> 
+	<a id="thumb1" class="highslide" href="images/beadwork/2009_1_4_small_3D.JPG" onclick="return hs.expand(this, inPageOptions)"> 
+		<img src="images/beadwork/thumbs/2009_1_4_small_3D.gif" alt="&lt;p&gt; My progression with the 3D Vehicle models creation" /> 
+	</a> 
+	<a id="thumb1" class="highslide" href="images/beadwork/2009_1_5_small_3D.JPG" onclick="return hs.expand(this, inPageOptions)"> 
+		<img src="images/beadwork/thumbs/2009_1_5_small_3D.gif" alt="&lt;p&gt;My progression with the 3D Vehicle models creation" /> 
+	</a> 
+	<a id="thumb1" class="highslide" href="images/beadwork/2009_1_6_small_3D.JPG" onclick="return hs.expand(this, inPageOptions)"> 
+		<img src="images/beadwork/thumbs/2009_1_6_small_3D.gif" alt="&lt;p&gt; Back View " />
+        </a> 
+	<a id="thumb1" class="highslide" href="images/beadwork/2009_1_rakhi_small_3D.JPG" onclick="return hs.expand(this, inPageOptions)"> 
+		<img src="images/beadwork/thumbs/2009_1_rakhi_small_3D.gif" alt="&lt;p&gt; My son sporting his car /Rakhi !" /> 
+	</a> 
+	<a id="thumb1" class="highslide" href="images/beadwork/2009_1.JPG" onclick="return hs.expand(this, inPageOptions)"> 
+		<img src="images/beadwork/thumbs/2009_1.gif" alt="&lt;p&gt; Greenery - The necklace is made with crystals and the ear rings are made with extra pieces from my watch and my old jewelery recycled :) !" />
+        </a> 
+</div>
+<div id="gallery-area" style="margin: 0pt auto; width: 450px; height: 550px;"></div>
+</td>
+          </tr>
+          <tr>
+            <td>
+            <div style="text-align: center;"> 
+		<i>
+			<font color="#666666" size="2">
+				Copyright 2009 <a href="../guestbook/index.html">Sreerekha</a> | All Rights Reserved
+			</font>
+		</i> 
+	     </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>
